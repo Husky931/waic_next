@@ -7,6 +7,7 @@ type ComponentProps = {
     items: string[]
 }
 
+//@ts-ignore
 const wrapRange = (val, min, max) => {
     max += 1
     const valMin = val - min,
