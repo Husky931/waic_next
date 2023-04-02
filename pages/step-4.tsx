@@ -27,9 +27,7 @@ function Step4() {
     const generate = async (combinedPrompt: string) => {
         updateLoading(true)
         const result = await axios.get(
-            `http://61.241.103.109:3332/?prompt=${encodeURIComponent(
-                combinedPrompt
-            )}`
+            `api/?prompt=${encodeURIComponent(combinedPrompt)}`
         )
 
         updateImage(result.data)
