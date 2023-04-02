@@ -119,10 +119,6 @@ function Step3() {
     const [prompt5, setprompt5] = useState("")
     const [prompt6, setprompt6] = useState("")
 
-    const getPrompts = () => {
-        console.log(prompt1, prompt2, prompt3, prompt4, prompt5, prompt6)
-    }
-
     return (
         <Box className="w-full min-h-screen flex flex-col justify-center items-center relative">
             <img
@@ -156,7 +152,6 @@ function Step3() {
                 className="mt-[50px]"
             >
                 <Button
-                    onClick={() => getPrompts()}
                     variant="outlined"
                     sx={{
                         borderRadius: "20px",
