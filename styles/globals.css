@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.slider-container {
+    display: flex;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    height: 40px;
+}
+
+.slider-container::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    width: calc(100vw / 3);
+    text-align: center;
+    font-size: 18px;
+    color: #e194ff;
+    /* border: 1px solid #e194ff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-active {
+    border: 1px solid #e194ff;
+    /* border-color: #ff0000; Change the border color for the active element */
+}
